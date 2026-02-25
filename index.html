@@ -2,77 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About - Roland Boniface Sogan</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Personal academic website of Roland Boniface Sogan, PhD student in Mathematics at Sorbonne University. Research on Gaussian graphical models, graphon inference, and multiple networks.">
-  <meta name="keywords" content="Roland Boniface Sogan, Roland Sogan, Boniface Sogan, Sogan, Statistics,Machine Learning, Mathematics, Sorbonne University, Gaussian Graphical Models, Graphon, Networks, PhD, Research">
-  <meta name="author" content="R. Boniface SOGAN" >
-
-  <!-- Mobile-friendly -->
+  <title>Roland Boniface Sogan - PhD Student in Statistics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Open Graph (for sharing on LinkedIn, Facebook, etc.) -->
-  <meta property="og:title" content="Roland Boniface Sogan - Academic Website">
-  <meta property="og:description" content="PhD student in Statistics at Sorbonne University. Research on Gaussian graphical models and graphon inference.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://RolandBonifaceSogan.github.io/">
-  <meta property="og:image" content="https://RolandBonifaceSogan.github.io/assets/profile.jpg">
-
-  <!-- Twitter Card (for sharing on Twitter/X) -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Roland Boniface Sogan - Academic Website">
-  <meta name="twitter:description" content="PhD student in Statistics at Sorbonne University. Research on Gaussian graphical models and graphon inference.">
-  <meta name="twitter:image" content="https://RolandBonifaceSogan.github.io/assets/profile.jpg">
-
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/background-network.css">
 </head>
+
 <body>
+  <canvas id="bgNetworkCanvas"></canvas>
+
   <header>
-  	 <img src="assets/photo_profile_adum.jpg" alt="Profile Picture" class="profile-pic">
-    <h1>About</h1>
+    <img src="assets/photo_profile_adum.jpg" alt="Roland Boniface Sogan" class="profile-pic">
+    <h1>Roland Boniface Sogan</h1>
+    <p>PhD Student in Statistics | Sorbonne University</p>
   </header>
-  
+
   <nav>
     <ul>
-      <li><a href="index.html">About</a></li>
-      <!-- <li><a href="cv.html">CV</a></li> -->
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
+      <!-- <li><a href="publications.html">Publications</a></li> -->
       <li><a href="teaching.html">Teaching</a></li>
-      <li><a href="conferences.html">Conferences</a></li>
-      <!-- <li><a href="responsibilities.html">Responsibilities</a></li>  -->
+      <li><a href="conferences.html">Talks</a></li>
     </ul>
   </nav>
 
   <main>
-    <h2>About</h2>
-    <p>
-      I am a PhD student at <strong>Sorbonne University</strong>, Paris.  
-      My research is focused on inference in Gaussian graphical models and graphon inference in multiple networks.  
-      My supervisors are <em>Tabea Rebafka</em> and <em>Fanny Villers</em>.
-    </p>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I am a PhD student in <strong>Statistics</strong> at <strong>Sorbonne University</strong>,
+        working at the Laboratory of Probability, Statistics and Modeling (<strong>LPSM</strong>).
+      </p>
+      <p>
+        My doctoral research, titled <em>"Statistical Inference in Graph Models: Graphon Estimation
+        and Gaussian Graphical Models"</em>, focuses on statistical inference for graph models and
+        complex networks. I am particularly interested in <strong>graphon estimation</strong>,
+        <strong>stochastic block models</strong>, <strong>Gaussian graphical models</strong>,
+        and <strong>high-dimensional statistical methods</strong>.
+      </p>
+      <p>My supervisors are <em>Tabea Rebafka</em> and <em>Fanny Villers</em>.</p>
+    </div>
 
-    <h3>Affiliation</h3>
-    <p>
-      Sorbonne University, Paris Cité, CNRS <br>
-      Laboratory of Probability, Statistics and Modeling (LPSM) <br>
-      4 Place Jussieu, 75005 Paris, France
-    </p>
+    <div class="card">
+      <h2>Research Interests</h2>
+      <ul class="research-list">
+        <li><strong>Graphon Estimation</strong></li>
+        <li><strong>Gaussian Graphical Models</strong></li>
+        <li><strong>Stochastic Block Models</strong></li>
+        <li><strong>Network Analysis</strong></li>
+        <li><strong>High-Dimensional Statistics</strong></li>
+        <li><strong>Multiple Testing & FDR Control</strong></li>
+      </ul>
+    </div>
 
-    <h3>Contact</h3>
-    <p>
-      📧 Email: <a href="mailto:roland-boniface.sogan@sorbonne-universite.fr">roland-boniface.sogan@sorbonne-universite.fr</a><br>
-      📍 Office: Room 15-25 219, Jussieu Campus
-    </p>
+    <div class="card">
+      <h3>Affiliation</h3>
+      <p>
+        <strong>Sorbonne Université</strong>, <strong>Université Paris Cité</strong>, <strong>CNRS</strong><br>
+        LPSM - Laboratoire de Probabilités, Statistique et Modélisation<br>
+        4 Place Jussieu, 75005 Paris, France
+      </p>
+    </div>
 
-    <h3>Find me online</h3>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/roland-boniface-sogan" target="_blank">LinkedIn</a></li>
-     <!--  <li><a href="https://github.com/tonpseudo" target="_blank">GitHub</a></li> -->
-     <!--  <li><a href="https://scholar.google.com/citations?user=XXXXX" target="_blank">Google Scholar</a></li>
-      <li><a href="https://orcid.org/0000-0000-0000-0000" target="_blank">ORCID</a></li>  -->
-    </ul>
+    <div class="card">
+      <h3>Contact</h3>
+      <p>
+        <a href="mailto:roland-boniface.sogan@sorbonne-universite.fr" class="icon-link">
+          <img src="assets/icons/logo-mail.png" alt="Email" class="icon">
+          Email
+        </a><br><br>
+
+        <span class="icon-link">
+          <img src="assets/icons/logo-room.png" alt="Room" class="icon">
+          Room 15-25 219, Jussieu Campus
+        </span>
+      </p>
+
+      <h3>Find Me Online</h3>
+      <ul class="links">
+        <li>
+          <a href="https://www.linkedin.com/in/roland-boniface-sogan" target="_blank" rel="noopener" class="icon-link">
+            <img src="assets/icons/logo-linkedin.png" alt="LinkedIn" class="icon">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/RolandBonifaceSogan" target="_blank" rel="noopener" class="icon-link">
+            <img src="assets/icons/logo-github.png" alt="GitHub" class="icon">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
   </main>
+
+  <script src="assets/js/background-network.js" defer></script>
 </body>
 </html>
