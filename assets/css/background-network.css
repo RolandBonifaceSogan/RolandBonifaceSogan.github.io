@@ -1,0 +1,17 @@
+/* Full-page animated background canvas */
+#bgNetworkCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  opacity: 0.50;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+/* Make sure content is above the background */
+header, nav, main {
+  position: relative;
+  z-index: 2;
+}
