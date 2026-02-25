@@ -2,72 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Conferences and Talks - Roland Boniface Sogan</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <title>Talks | Roland Boniface Sogan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/background-network.css">
 </head>
+
 <body>
-  <header>
-    <h1>Conferences and Talks</h1>
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="index.html">About</a></li>
-     <!-- <li><a href="cv.html">CV</a></li> -->
-      <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
-      <li><a href="conferences.html">Conferences</a></li>
-      <!-- <li><a href="responsibilities.html">Responsibilities</a></li> -->
+
+<canvas id="bgNetworkCanvas"></canvas>
+
+<header>
+  <img src="assets/photo_profile_adum.jpg" alt="Roland Boniface Sogan" class="profile-pic">
+  <h1>Roland Boniface Sogan</h1>
+  <p>PhD Student in Statistics | Sorbonne University</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="conferences.html" class="active">Talks</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <div class="card">
+    <h2>Talks</h2>
+    <ul class="research-list">
+      <li><strong>Workshop MSAD</strong> — Oral presentation — 2026</li>
+      <li><strong>NetBio Conference</strong> (Orléans) — <em>Reconstruction of biological interaction networks using Gaussian Graphical Models</em> — 2025</li>
+      <li><strong>Séminaire MAV</strong> — Oral presentation — 2025</li>
+      <li><strong>Séminaire doctoral du LPSM</strong> — Oral presentation — 2025</li>
+      <li><strong>55es Journées de Statistique (SFdS)</strong> (Bordeaux) — <em>Histogram Graphon Estimation from Multiple Networks</em> — 2024</li>
     </ul>
-  </nav>
+  </div>
 
-  <main>
-    <section>
-      <h2> Conferences</h2>
-      <ul>
-        <li>
-          <strong>Aug 2024</strong> — 11th World Congress of the Bernoulli–IMS Society, Bochum, Germany  
-          <br><em>Poster:</em> Inference of Graphons from a Collection of Networks
-        </li>
-        <li>
-          <strong>May 2024</strong> — 5es Journées de Statistique (JdS) de la Société Française de Statistique (SFdS), Bordeaux, France
-          <br><em>Oral Presentation:</em> Histogram Graphon Estimation from Multiple Networks
-        </li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Poster</h2>
+    <ul class="research-list">
+      <li><strong>11th World Congress of the Bernoulli–IMS</strong> (Bochum) — <em>Inference of graphons from a collection of graphs</em> — 2024</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Seminars and Invited Talks</h2>
-      <ul>
-        <li>
-          <strong>Jun 2025</strong> — Seminar on Random Modeling in Life Sciences, Paris, France  
-          <br><em>Invited Talk:</em> Inference of Gaussian Graphical Models with False Discovery Rate Control
-        </li>
-        <li>
-          <strong>Nov 2025</strong> — NetBio Conference, Orléans, France  
-          <br><em>Oral Presentation:</em> Reconstruction of Biological Interaction Networks using Gaussian Graphical Models
-        </li>
-        <li>
-          <strong>Dec 2025</strong> — LPSM Doctoral Seminar, Paris, France  
-          <br><em>Invited Talk:</em> Scalable Graphon Inference: A Fast and Consistent Approach for Multi-Network Data
-        </li>
-        <li>
-          <strong>Mar 2026</strong> — LMRS Statistics Seminar, Rouen, France  
-          <br><em>Scheduled Invited Talk</em>
-        </li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Academic Service</h2>
+    <ul class="research-list">
+      <li><strong>Co-organizer</strong> — Sorbonne Graduate Conference on Machine Learning and Statistics (SGMS 2025) — 2025</li>
+      <li><strong>Active participation</strong> — LPSM doctoral seminar — 2024</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Scientific Outreach</h2>
-      <ul>
-        <li>
-          <strong>Jul 2024</strong> — GeoStat Reading Group, MINES Paris–PSL, Paris, France  
-          <br><em>Oral Presentation & Discussion:</em> Learning Bayesian Networks: A Survey of Bayesian Methods
-        </li>
-      </ul>
-    </section>
-  </main>
+</main>
+
+<script src="assets/js/background-network.js" defer></script>
+
 </body>
 </html>
